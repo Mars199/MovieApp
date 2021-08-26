@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+:root{
+    --primary-color:#F0E6EF;
+    --secondary-color:#9C89B8;
+
+
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Crimson Text', serif;
+    background-color:var(--primary-color) ;
+    margin: 0;
+   
+}
+
+header{
+    background-color:#9C89B8;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar-brand{
+    color: #6ed0e9;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: auto;
+    margin-right: auto;
+    padding-left:20px;
+}
+.icon-bar img {
+  
+  float: left;
+  margin-left: 50px;
+ 
+  
+}
+
+.search{
+    background-color: transparent;
+    border: 2px solid #B8BEDD;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem ;
+    color:#9C89B8 ;
+
+}
+.search::placeholder{
+    color: #B8BEDD;
+}
+.search:focus{
+    outline: none;
+    background-color: #F0E6EF;
+
+
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+     padding-left: 100px;
+
+}
+.movie{
+    width: 300px;
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 5px #B392AC ;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.movie img{
+    width: 100%;
+
+}
+.movie-info{
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 0.5rem ;
+    letter-spacing: 0.5px;
+
+}
+.movie-infos h3{
+    margin-top: 0;
+}
+.movie-info span{
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.5rem ;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.movie-info span.green{
+    color:#6ED0E9 ;
+}
+.movie-info span.red{
+    color:#6ED0E9 ;
+}
+.movie-info span.yellow{
+    color:#6ED0E9;
+} 
+.overview{
+    padding: 2rem;
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    transform: transform 0.3s ease-in;
+}
+.movie:hover .overview{
+    transform: translateY(0);
+}
